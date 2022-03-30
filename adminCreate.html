@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="adminHome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Distance Learning Survey</title>
+</head>
+
+<body>
+        <header> 
+            <h2 class="logo">Admin Portal</h2>
+            <nav>
+              <ul class="nav-links">
+                <li id="adminCreate"><a href="adminHome.html">Home</a></li>
+                <li id="adminCreate2"><a href="adminCreate.html">Create Surveys</a></li>
+                <!-- <li ><a href="">About</a></li> -->
+              </ul>
+            </nav>
+             <!-- <a class="cta"href="#"><button>Contact</button></a> -->
+          </header>
+
+        
+    <button class="surveyBtn">Create New</button>
+    <div class="create-new">
+       
+    </div>
+    <div class="surveyList">
+        <h2 class="h2">List of Surveys</h2>
+        <table>
+            <tr>
+                <thead>
+                    <tr>
+                        <th>Created By</th>
+                        <th>Survey Name</th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="survey-list">
+                  
+                </tbody>
+        </table>
+    </div>
+    <div class="modal-container">
+        <div class="modal">
+            <div class="modal-header">
+                <h1 id="modal-header">Enter Question</h1>
+            </div>
+            <div class="modal-body">
+                <textarea id="question" placeholder="Enter your question here..." name="question" rows="4"
+                    cols="50"></textarea>
+                <select id="question-type">
+                    <option value="-1" disabled selected>select question type</option>
+                    <option value="1">text</option>
+                    <option value="3">yes/no</option>
+                    <option value="0">input</option>
+                    <option value="2">range</option>
+                    <option value="6">dropdown</option>
+                </select>
+            </div>
+            <div class="possible-answers">
+            </div>
+            <div class="modal-btns">
+                <button class="btn-next">Next Question</button>
+                <button class="btn-Complete">Done</button>
+            </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="question-list">
+            <h2 id="questions-header">Survey Questions</h2>
+            <ol class="ordered-list">
+                
+              </ol>
+              <button class="closeBtn">Close</button>
+        </div>
+    </div>
+    <script src="adminLogic.js"></script>
+    <script src="script.js"></script>
+    <script src="questionLogic.js"></script>
+    <script src="admin.js"></script>
+    
+</body>
+
+</html>

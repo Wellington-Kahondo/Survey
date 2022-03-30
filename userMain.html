@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="userMain.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Welcome</title>
+</head>
+<body>
+    <div class="header">
+
+    </div>
+    <div class="side-bar">
+        <nav class="nav-bar">
+            <ul class="nav-list">
+              <li class="active"><a class="view-surveys">View Surveys</a></li>
+              <li><a class="settings">Settings</a></li>
+            </ul>
+          </nav>
+    </div>
+    
+    <div class="main-bar">        
+        <div class="viewList">
+            <div class="search-surveys">
+                <input class="search-input" type="text">
+                <button class="search-btn">Search</button>
+            </div>
+            <button class="show-Btn">Show Surveys</button>
+            <h2>Surveys List</h2>
+            <table class="survey-table">
+               <thead>
+                <tr>
+                    <th>Survey Name</th>
+                    <th></th>                      
+                  </tr>
+               </thead>
+                <tbody id="survey-list">
+                   
+                </tbody>
+            </table>
+        </div>
+    </div>
+ 
+    <script src="adminLogic.js"></script>
+    <script src="userMain.js"></script>
+</body>
+</html>

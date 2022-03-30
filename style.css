@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  margin: 0;
+}
+.login-container{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('pexels-edward-jenner-4253054.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+    
+.login-form{
+    padding: 0 20px;   
+    position: relative;
+    width: 25%;
+    height: 85%;
+    display: flex;  
+    flex-direction: column;
+    background-color: #fff;
+}
+.item1{
+    padding: 0 20px;   
+    position: relative;
+    width: 25%;
+    height: 85%;
+    display: flex;  
+    flex-direction: column;
+    background: linear-gradient(to right, #FFA500, white);
+}
+label{
+    display: block;
+    margin-top:35px;
+    padding:10px 0;
+   
+}
+.login-input{
+    display: block;
+    width: 100%;
+    height: 35px;
+    color: #A9A9A9;
+    background-color: #fff;
+    outline: none;
+    border: none;
+    border-left: 10px solid #FFE4B5;
+    font-size: 15px;
+    padding: 5px 30px 5px 40px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+}
+.login-input:focus{
+    box-shadow: 3px 3px 10px rgba(0,0,5,0.8);
+}
+label{
+    color: 	#A9A9A9;
+}
+#username{
+    color: 	#A9A9A9
+}
+.btn-submit{
+    margin-top: 25px;
+    width: 100%;
+    padding: 8px 10px;
+    border: none;
+    background-color: #FFA500;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .3s ease;
+}
+.btn-submit:hover{
+    background-color: #FF8C00;
+    font-weight: bold;
+}
+.input-icons i {
+    position: absolute;
+}
+.input-icons {
+    width: 100%;
+    margin-bottom: 5px;
+}
+.icon {
+    padding: 10px;
+    color: #FF8C00;
+    min-width: 50px;
+    text-align: center;
+}
+p span{
+    color:#FF8C00;
+    transition: 0.3s ease-in-out;
+}
+p span:hover{
+    color:#FF8C00;
+    cursor: pointer;
+    font-weight:bold;
+}
+
+.signup-container{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('pexels-edward-jenner-4253054.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+  
+}
+.signUp{
+    background-color: #eee;
+    padding: 0 20px;
+    border: 1px solid #FFE4B5;
+    position: relative;
+    width: 40%;
+    height: 95%;
+    display: flex;  
+    flex-direction: column;
+    border-radius: 15px;
+    min-height: auto;
+    max-height: 95%;
+   
+}
+
+.reg{
+    min-width: 50px;
+    margin: 15px;
+    height: 33px;
+    border-radius: 3px;
+    border: none;
+    padding: 5px;
+    border-left: 5px solid #FFE4B5;
+  
+}
+.reg:focus{
+    outline: none;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+}
+.terms{
+    margin: 20px;
+    display: inline;
+}
+.check{
+    margin-right: 20px;
+}
+.policy{
+    color: #00BFFF;
+}
+.signup-btn{
+    height: 35px;
+    background-color: 	#FFA500;
+    font-weight: bold;
+    margin: 0 20px;
+    padding: 5px 0;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    transition: .3s ease;
+}
+.signup-btn:hover{
+    cursor: pointer;
+    background-color: #FF8C00;
+   
+}
+.head,
+.subHead{
+    margin: 0 20px;
+    padding: 10px;
+    color: #808080;
+}
+.head{
+    text-align: center;
+    font-size: 30px;
+}
+.subitem1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem auto;
+    color:#fff;
+}
+.start-btn{
+    margin: 60px auto;
+    padding: 20px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    transition: .3s ease-in-out;
+}
+.start-btn:hover{
+    border: none;
+    background-color: #1E90FF;
+    cursor: pointer;
+}
+.signIn{
+    margin: 40px 20px;
+}
+.hide-forms{
+    visibility: hidden;
+}
